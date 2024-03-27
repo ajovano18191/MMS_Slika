@@ -100,6 +100,7 @@
             pbOriginal.Location = new Point(3, 3);
             pbOriginal.Name = "pbOriginal";
             pbOriginal.Size = new Size(374, 328);
+            pbOriginal.SizeMode = PictureBoxSizeMode.Zoom;
             pbOriginal.TabIndex = 0;
             pbOriginal.TabStop = false;
             // 
@@ -121,6 +122,7 @@
             btnLoad.TabIndex = 4;
             btnLoad.Text = "Load";
             btnLoad.UseVisualStyleBackColor = true;
+            btnLoad.Click += btnLoad_Click;
             // 
             // btnSave
             // 
@@ -179,6 +181,7 @@
             // ofdImage
             // 
             ofdImage.FileName = "openFileDialog1";
+            ofdImage.InitialDirectory = "C:\\Users\\Aleksa\\Desktop\\Elfak\\VIII_semestar\\MMS\\MMS_Slika\\MMS_Slika\\Test images";
             // 
             // Form1
             // 
