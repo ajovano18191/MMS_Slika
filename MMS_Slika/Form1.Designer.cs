@@ -57,6 +57,7 @@
             cbDithering.TabIndex = 0;
             cbDithering.Text = "Burkes";
             cbDithering.UseVisualStyleBackColor = true;
+            cbDithering.CheckedChanged += cbDithering_CheckedChanged;
             // 
             // cbBaseFilter
             // 
@@ -67,6 +68,7 @@
             cbBaseFilter.TabIndex = 1;
             cbBaseFilter.Text = "Invert";
             cbBaseFilter.UseVisualStyleBackColor = true;
+            cbBaseFilter.CheckedChanged += cbBaseFilter_CheckedChanged;
             // 
             // cbAdvancedFilter
             // 
@@ -77,6 +79,7 @@
             cbAdvancedFilter.TabIndex = 2;
             cbAdvancedFilter.Text = "Kuwahara";
             cbAdvancedFilter.UseVisualStyleBackColor = true;
+            cbAdvancedFilter.CheckedChanged += cbAdvancedFilter_CheckedChanged;
             // 
             // tableLayoutPanel1
             // 
@@ -111,6 +114,7 @@
             pbFiltered.Location = new Point(383, 3);
             pbFiltered.Name = "pbFiltered";
             pbFiltered.Size = new Size(374, 328);
+            pbFiltered.SizeMode = PictureBoxSizeMode.Zoom;
             pbFiltered.TabIndex = 1;
             pbFiltered.TabStop = false;
             // 
@@ -132,6 +136,7 @@
             btnSave.TabIndex = 5;
             btnSave.Text = "Save";
             btnSave.UseVisualStyleBackColor = true;
+            btnSave.Click += btnSave_Click;
             // 
             // groupBox1
             // 
@@ -182,6 +187,10 @@
             // 
             ofdImage.FileName = "openFileDialog1";
             ofdImage.InitialDirectory = "C:\\Users\\Aleksa\\Desktop\\Elfak\\VIII_semestar\\MMS\\MMS_Slika\\MMS_Slika\\Test images";
+            // 
+            // sfdImage
+            // 
+            sfdImage.Filter = "Aleksa|*.ako";
             // 
             // Form1
             // 
